@@ -4,7 +4,7 @@
 import { Client } from "knix";
 import SQLite from "react-native-sqlite-storage";
 
-async function func() {
+async function example() {
   const client = new Client(await SQLite.openDatabase({ name: ":memory:" }));
   await client
     .query(
