@@ -1,0 +1,35 @@
+{
+  "name": "knix",
+  "version": "0.0.1",
+  "description": "opinionated react native sqlite library",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-koehler/knix.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "sqlite"
+  ],
+  "author": "k-koehler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k-koehler/knix/issues"
+  },
+  "homepage": "https://github.com/k-koehler/knix#readme",
+  "devDependencies": {
+    "@types/react-native-sqlite-storage": "^5.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "jest": "^27.5.1",
+    "react-native-sqlite-storage": "^6.0.1",
+    "sqlite3": "^5.0.2",
+    "typescript": "^4.6.3"
+  }
+}
