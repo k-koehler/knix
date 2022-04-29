@@ -1,6 +1,6 @@
 {
   "name": "knix",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "opinionated react native sqlite library",
   "main": "dist/index.js",
   "scripts": {

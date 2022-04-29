@@ -41,9 +41,7 @@ export class Client implements IClient {
 
   public async transaction(cb: (client: TransactedClient) => Promise<unknown>) {
     await this.sqlite.transaction(async (tx) => {
-      console.log("start");
       await cb(new TransactedClient(this.sqlite, tx));
-      console.log("finish");
     });
   }
 }

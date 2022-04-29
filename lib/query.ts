@@ -30,7 +30,7 @@ export class Query<T> {
           (_, resultSet) => {
             resolve(cb(resultSet));
           },
-          (_, err) => reject(err)
+          (err: any) => reject(new Error(err.message))
         );
       });
     });
@@ -45,7 +45,7 @@ export class Query<T> {
         this.sql,
         this.params,
         (_, resultSet) => resolve(cb(resultSet)),
-        (_, err) => reject(err)
+        (err: any) => reject(new Error(err.message))
       )
     );
   }
